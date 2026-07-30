@@ -50,3 +50,5 @@ def get_portfolio_stats():
         df = pd.read_csv(stats_path)
         return sanitize_records(df)
     return []
+
+router = APIRouter()

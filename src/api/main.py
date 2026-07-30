@@ -1,8 +1,24 @@
 ﻿from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
-from src.api.routers import health, companies, analytics_routes
 
-app = FastAPI(title="N100 Financial Intelligence API", version="1.0.0")
+from src.api.routers import (
+    health,
+    companies,
+    sectors,
+    screener,
+    peers,
+    portfolio,
+    valuation,
+    documents,
+    analytics_routes,
+)
+
+app = FastAPI(
+    title="N100 Financial Intelligence Platform API",
+    version="1.0.0",
+    description="Financial analytics and screener backend API",
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -12,9 +28,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(health.router, prefix="/api/v1", tags=["Health"])
-app.include_router(companies.router, prefix="/api/v1", tags=["Companies"])
-app.include_router(analytics_routes.screener_router, prefix="/api/v1", tags=["Screener"])
-app.include_router(analytics_routes.sectors_router, prefix="/api/v1", tags=["Sectors"])
-app.include_router(analytics_routes.peers_router, prefix="/api/v1", tags=["Peers"])
-app.include_router(analytics_routes.portfolio_router, prefix="/api/v1", tags=["Portfolio"])
+@app.get("/", include_in_schema=False)
+def root_redirect():
+    return RedirectResponse(url="/docs")
+
+app.include_router(health.router, tags=["Health"])
+app.include_router(companies.router, tags=["Companies"])
+app.include_router(sectors.router, tags=["Sectors"])
+app.include_router(screener.router, tags=["Screener"])
+app.include_router(peers.router, tags=["Peers"])
+app.include_router(portfolio.router, tags=["Portfolio"])
+app.include_router(valuation.router, tags=["Valuation"])
+app.include_router(documents.router, tags=["Documents"])
+app.include_router(analytics_routes.router, tags=["Analytics"])

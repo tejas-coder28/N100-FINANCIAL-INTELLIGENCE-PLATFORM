@@ -1,0 +1,26 @@
+# Python Caches
+__pycache__/
+*.pyc
+
+# Environment Files
+.env
+
+# Databases
+*.sqlite
+*.db
+data/*.sqlite
+data/*.db
+db/*.db
+
+# Generated Outputs & Artifacts
+output/
+reports/radar_charts/
+reports/sector/
+reports/tearsheets/
+reports/portfolio/
+*.pdf
+*.png
+*.html
+
+# Data files (uncomment if raw Excel datasets shouldn't be tracked)
+# data/raw/*.xlsx
