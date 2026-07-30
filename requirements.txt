@@ -1,0 +1,11 @@
+﻿fastapi
+uvicorn[standard]
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+pytest
+pytest-html
+requests
+pydantic

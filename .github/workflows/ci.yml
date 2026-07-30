@@ -1,0 +1,54 @@
+﻿name: CI Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-and-verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Initialize Database
+        run: |
+          python scripts/init_database.py
+
+      - name: Run Pytest Suite & Generate HTML Report
+        run: |
+          python -m pytest tests/ -v --html=reports/pytest_report.html --self-contained-html
+
+      - name: Start FastAPI Background Server
+        run: |
+          python -m uvicorn src.api.main:app --host 0.0.0.0 --port 8000 &
+          sleep 3
+
+      - name: Run Performance Benchmark
+        run: |
+          python scripts/test_perf.py
+
+      - name: Verify Acceptance Gates
+        run: |
+          python scripts/verify_gates.py
+
+      - name: Upload Test Reports Artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-and-performance-reports
+          path: reports/
