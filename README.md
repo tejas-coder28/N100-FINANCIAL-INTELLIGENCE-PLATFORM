@@ -8,20 +8,20 @@
 <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
 <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white" />
 <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-<img src="https://img.shields.io/badge/License-MIT-ef4444?style=flat-square" />
-<img src="https://img.shields.io/github/last-commit/tejas-coder28/N100-FINANCIAL-INTELLIGENCE-PLATFORM?style=flat-square&color=ef4444" />
+<img src="https://img.shields.io/badge/License-MIT-8b5cf6?style=flat-square" />
+<img src="https://img.shields.io/github/last-commit/tejas-coder28/N100-FINANCIAL-INTELLIGENCE-PLATFORM?style=flat-square&color=8b5cf6" />
 
 </div>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=🎓%20ABOUT&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=🎓%20ABOUT&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 Retail and institutional market participants face significant latency when analyzing large equity baskets, cross-comparing sector multiples, and evaluating fundamental balance sheet health across premier index constituents. This platform solves that problem by establishing an automated quantitative intelligence pipeline: normalizing raw multi-year financial statements, computing rigorous fundamental ratios (ROE, ROCE, Operating Margin, Debt/Equity), clustering peer groups using unsupervised machine learning (K-Means), and exposing clean analytical endpoints through a production-grade FastAPI REST application.
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=✨%20FEATURES&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=✨%20FEATURES&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 - **Multi-Factor Stock Screener Engine**: Real-time parametric filtering across valuation multiples (P/E, P/B), profitability (ROE, ROCE), and financial leverage through `/api/v1/screener`.
 - **Unsupervised Peer Clustering**: Scikit-Learn K-Means clustering pipeline identifying peer groups and factor similarities, with automated radar chart generation for each constituent.
@@ -32,7 +32,7 @@ Retail and institutional market participants face significant latency when analy
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=⚡%20TECH%20STACK&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=⚡%20TECH%20STACK&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 | Layer | Technology |
 |---|---|
@@ -46,7 +46,7 @@ Retail and institutional market participants face significant latency when analy
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=🏗️%20ARCHITECTURE&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=🏗️%20ARCHITECTURE&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 ```mermaid
 flowchart TD
@@ -78,7 +78,7 @@ flowchart TD
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=🚀%20GETTING%20STARTED&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=🚀%20GETTING%20STARTED&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -143,7 +143,7 @@ pytest tests/ -v --html=reports/pytest_report.html
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=📁%20PROJECT%20STRUCTURE&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=📁%20PROJECT%20STRUCTURE&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 ```
 N100-FINANCIAL-INTELLIGENCE-PLATFORM/
@@ -174,7 +174,7 @@ N100-FINANCIAL-INTELLIGENCE-PLATFORM/
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=📸%20SCREENSHOTS&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=📸%20SCREENSHOTS&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 ### 1. Interactive Swagger API Documentation
 *Explore and test REST routes directly via the interactive OpenAPI Swagger UI at `/docs`.*
@@ -199,7 +199,7 @@ N100-FINANCIAL-INTELLIGENCE-PLATFORM/
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=🔮%20FUTURE%20IMPROVEMENTS&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=🔮%20FUTURE%20IMPROVEMENTS&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 - **Live Market Feed Websockets**: Stream real-time equity prices into screener endpoints using NSE / BSE websocket connections.
 - **Monte Carlo DCF Simulation**: Incorporate stochastic simulation for DCF intrinsic valuation under variable discount rates and terminal multiples.
@@ -207,7 +207,7 @@ N100-FINANCIAL-INTELLIGENCE-PLATFORM/
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:ef4444,100:0a1428&height=48&section=header&text=👤%20AUTHOR&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0a1428,50:8b5cf6,100:0a1428&height=48&section=header&text=👤%20AUTHOR&fontSize=22&fontColor=ffffff&fontAlignY=50" width="100%" />
 
 **Tejas Muralidhar**
 - GitHub: [@tejas-coder28](https://github.com/tejas-coder28)
