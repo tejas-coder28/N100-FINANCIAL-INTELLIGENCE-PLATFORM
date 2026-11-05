@@ -1,4 +1,4 @@
-﻿# Python Caches
+# Python Caches
 __pycache__/
 *.pyc
 
@@ -21,3 +21,8 @@ reports/portfolio/
 *.pdf
 *.png
 *.html
+
+# Allow documentation assets
+!docs/
+!docs/**
+!docs/assets/*.png
